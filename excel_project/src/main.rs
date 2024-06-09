@@ -17,12 +17,8 @@ fn main() -> Result<(), Box<dyn Error>> {
   }
   }
 
-
-
-
   let mut vector_entries: Vec<_> = Vec::new();
   let entries = fs::read_dir("C:\\Users\\berna\\OneDrive\\Documentos")?;
-  let mut items_from_vector: Vec<_> = Vec::new();
 
 
   for entry in entries {
@@ -44,9 +40,6 @@ fn main() -> Result<(), Box<dyn Error>> {
         }
       }
     };
-
-
-
 
 
   Ok(())
