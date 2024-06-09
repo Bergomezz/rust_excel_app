@@ -12,7 +12,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
   if let Ok(range) = workbook.worksheet_range("Plan1") {
   for row in range.rows() {
-      items_uniq_wb.push(row);
+      items_uniq_wb.push(row.to_owned());
       println!("{:?}", items_uniq_wb);
   }
   }
@@ -36,7 +36,10 @@ fn main() -> Result<(), Box<dyn Error>> {
 
       if let Ok(range) = workbooks.worksheet_range("Plan1"){
         for rows in range.rows(){
-          println!("{:?}", rows);
+          let rows_vec: Vec<_> = rows.iter().cloned().collect();
+          if items_uniq_wb.contains(&rows_vec) {
+                println!("O item {:?} está presente em ambos os vetores", rows);
+            }
         }
       }
     };
