@@ -1,0 +1,3 @@
+# :hammer_and_wrench: APPLICATION PROJECT TO STUDYING THE RUST LANGUAGE COMPARE ONE TARGET FILE WITH ALL FILES INTO THE DIRECTORY :hammer_and_wrench:
+
+#### Under construction
