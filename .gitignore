@@ -1,0 +1,20 @@
+# Arquivos compilados
+*.o
+*.so
+*.rlib
+*.dll
+
+# Diretório de saída
+/target/
+
+# Arquivos gerados pelo Cargo
+Cargo.lock
+
+# Arquivos gerados pelo rustdoc
+/doc/
+
+# Arquivos de configuração do editor
+.idea/
+*.swp
+*.swo
+*.bak
